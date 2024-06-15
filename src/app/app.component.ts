@@ -3,17 +3,18 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NewComponent } from './components/new-component/new-component.component';
 import { TemplateVariablesComponent } from './components/template/template-variables/template-variables.component';
+import { TemplateControlFlowComponent } from './components/template/template-control-flow/template-control-flow.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NewComponent, NewComponent, TemplateVariablesComponent],
-  
+  imports: [RouterOutlet, NewComponent, NewComponent, TemplateVariablesComponent, TemplateControlFlowComponent],
+
   template: `
-  <router-outlet />
+
   <h1>Curso de Angular</h1>
-  <app-template-binding/>
+  <app-template-control-flow />
   `,
 })
 export class AppComponent {}
