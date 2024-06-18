@@ -8,7 +8,7 @@ import { TemplateDeferrableViewsComponent } from './components/template/template
 
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-signals',
   standalone: true,
   imports: [RouterOutlet, NewComponent, NewComponent, TemplateVariablesComponent,
      TemplateControlFlowComponent, TemplateDeferrableViewsComponent],
@@ -16,7 +16,7 @@ import { TemplateDeferrableViewsComponent } from './components/template/template
   template: `
 
   <h1>Curso de Angular</h1>
-  <app-template-deferrable-views />
+  <app-signals />
   `,
 })
 export class AppComponent {}
