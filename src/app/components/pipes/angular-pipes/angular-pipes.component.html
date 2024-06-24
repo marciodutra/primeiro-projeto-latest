@@ -1,0 +1,24 @@
+<h2>Pipes</h2>>
+<ul>
+  <li>
+    {{ date() | date : 'short'}}
+  </li>
+</ul>
+
+<ul>
+  <li>
+    {{ 'marcio dutra' | uppercase }}
+  </li>
+</ul>
+
+<ul>
+  <li>
+    {{ 'MARCIO DUTRA' | lowercase }}
+  </li>
+  <li>
+    {{ json() | json }}
+  </li>
+  <li>
+    {{ loadingData$ | async }}
+  </li>
+</ul>

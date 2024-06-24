@@ -6,6 +6,7 @@ import { NewComponent } from './components/new-component/new-component.component
 import { TemplateControlFlowComponent } from './components/template/template-control-flow/template-control-flow.component';
 import { TemplateDeferrableViewsComponent } from './components/template/template-deferrable-views/template-deferrable-views.component';
 import { TemplateVariablesComponent } from './components/template/template-variables/template-variables.component';
+import { AngularPipesComponent } from './components/pipes/angular-pipes/angular-pipes.component';
 
 
 @Component({
@@ -13,12 +14,12 @@ import { TemplateVariablesComponent } from './components/template/template-varia
   standalone: true,
   imports: [RouterOutlet, NewComponent, NewComponent, TemplateVariablesComponent,
      TemplateControlFlowComponent, TemplateDeferrableViewsComponent,
-     PaiOuMaeComponent, InputComponent],
+     PaiOuMaeComponent, InputComponent, AngularPipesComponent],
 
   template: `
 
   <h1>Curso de Angular</h1>
-  <app-pai-ou-mae />
+  <app-angular-pipes />
   `,
 })
 export class AppComponent {}

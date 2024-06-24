@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { InputComponent } from '../input/input.component';
 import { OutputComponent } from '../output/output.component';
 
@@ -10,5 +10,6 @@ import { OutputComponent } from '../output/output.component';
   styleUrl: './pai-ou-mae.component.scss'
 })
 export class PaiOuMaeComponent {
-
+public name = signal("Márcio Dutra");
+public outputName = signal('Output: sem valor')
 }
