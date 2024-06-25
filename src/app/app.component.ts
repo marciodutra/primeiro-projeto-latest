@@ -7,6 +7,7 @@ import { TemplateControlFlowComponent } from './components/template/template-con
 import { TemplateDeferrableViewsComponent } from './components/template/template-deferrable-views/template-deferrable-views.component';
 import { TemplateVariablesComponent } from './components/template/template-variables/template-variables.component';
 import { AngularPipesComponent } from './components/pipes/angular-pipes/angular-pipes.component';
+import { CustomStringPipe } from './pipes/custom-string.pipe';
 
 
 @Component({
@@ -14,7 +15,7 @@ import { AngularPipesComponent } from './components/pipes/angular-pipes/angular-
   standalone: true,
   imports: [RouterOutlet, NewComponent, NewComponent, TemplateVariablesComponent,
      TemplateControlFlowComponent, TemplateDeferrableViewsComponent,
-     PaiOuMaeComponent, InputComponent, AngularPipesComponent],
+     PaiOuMaeComponent, InputComponent, AngularPipesComponent, CustomStringPipe],
 
   template: `
 
